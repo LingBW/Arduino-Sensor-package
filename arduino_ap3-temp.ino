@@ -141,7 +141,7 @@ void ap3transmes(String message) {
   
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
   //mySerial.write("!!!sudo:o00200000>>");  
-  String mess = String("ylb"+message);
+  String mess = String("ylb "+message); // JiM just added a space after "ylb" as required by AP3 after Jan 2018
   mySerial.print(mess);
   mySerial.print("\n");
   delay(5000);                       // wait for a second
